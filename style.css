@@ -1,0 +1,31 @@
+body {
+    /* Fondo con degradado de rojo a negro */
+    background-color: #d40026; /* Color de fallback */
+    background-image: linear-gradient(to bottom, #111, #d40026);
+    background-attachment: fixed; /* Para que el fondo no se mueva al hacer scroll */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #fff; /* Color de texto para que se vea bien en el fondo oscuro */
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+
+    /* Efecto de granulado */
+    position: relative;
+    overflow: hidden; /* Evita que el granulado se salga de los bordes */
+}
+
+body::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* La imagen de ruido se repite para cubrir toda el área */
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="3" height="3"><filter id="a"><feTurbulence baseFrequency=".7" numOctaves="1" result="b"/><feColorMatrix in="b" values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 20 -10"/></filter><rect width="100%" height="100%" fill="transparent" filter="url(#a)"/></svg>');
+    background-size: 50% 50%; /* Ajusta el tamaño para que el granulado sea más o menos visible */
+    opacity: 0.05; /* Ajusta la opacidad para que el efecto sea sutil */
+    pointer-events: none; /* Asegura que el granulado no interfiera con los clics */
+}
