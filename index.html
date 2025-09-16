@@ -3,23 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dashboard
-    </title>
+    <title>Dashboard Home Assistant</title>
     <link rel="stylesheet" href="style.css">
-    </head>
+</head>
 <body>
 
-    <header>
-        <h1>Home</h1>
-    </header>
+    <!-- Blobs animados -->
+    <div class="blob blob1"></div>
+    <div class="blob blob2"></div>
+    <div class="blob blob3"></div>
 
-    <main class="dashboard-container">
-        </main>
+    <!-- Contenedor principal -->
+    <main class="dashboard-content">
 
-    <footer>
-        <p>&copy; 2025 Mi Dashboard</p>
-    </footer>
+        <!-- Primera columna (2 filas) -->
+        <div class="grid-item">
+            <div class="card">
+                <h2>Vigilancia</h2>
+                <p>Cámaras</p>
+            </div>
+            <div class="card">
+                <h2>Iluminación</h2>
+                <p>Estado: Encendida</p>
+            </div>
+        </div>
+
+        <!-- Segunda columna -->
+        <div class="card">
+            <h2>Música</h2>
+            <p>Reproduciendo...</p>
+        </div>
+
+        <!-- Tercera columna -->
+        <div class="card">
+            <h2>Clima</h2>
+            <p>25°C</p>
+        </div>
+
+    </main>
 
     <script src="script.js"></script>
-    </body>
+</body>
 </html>
