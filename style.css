@@ -94,34 +94,10 @@ body {
   z-index: 1;
   width: calc(100vw - 80px);
   height: calc(100vh - 80px);
-  padding: 20px;
+  padding: 32px;
 
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
   align-items: stretch;
-}
-
-/* Primera columna */
-.grid-item {
-  display: grid;
-  grid-template-rows: repeat(2, 1fr);
-  gap: 20px;
-  height: 100%;
-}
-
-/* Tarjetas */
-.card {
-  background-color: var(--card-color);
-  border-radius: 12px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  padding: 20px;
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease-in-out;
-  backdrop-filter: blur(10px);
-}
-
-.card:hover {
-  transform: scale(1.03);
-  background-color: rgba(0, 0, 0, 0.10);
 }
