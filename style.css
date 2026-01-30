@@ -92,7 +92,7 @@ body {
   border-radius: 15px;
   box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
   z-index: 1;
-  height: calc(100vh - 160px);
+  height: calc(100vh - 500px);
   padding: 32px;
 
   display: grid;
